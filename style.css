@@ -32,7 +32,7 @@ body {
 @media (min-width: 1600px) { body { font-size: 1.28rem; } }
 .site { display: grid; gap: .35rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
 .site h1 { font-size: 1.6rem; font-weight: 600; margin: 0; letter-spacing: -.01em; }
-.site p { margin: 0; color: var(--muted); }
+.site p { margin: 0; color: color-mix(in srgb, var(--ink) 35%, var(--muted)); }
 .meta { font-family: var(--font-meta); font-size: .78rem; letter-spacing: .02em; color: var(--muted); }
 nav ol { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .6rem; }
 nav li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; }
