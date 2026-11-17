@@ -59,6 +59,10 @@ sup a { text-decoration: none; padding: 0 .1em; }
 .poem .translation { color: var(--muted); font-style: italic; font-size: 1rem; }
 .poem figcaption { margin-bottom: .4rem; }
 @media (min-width: 640px) { .poem { grid-template-columns: 1fr 1fr; } }
+.photos { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0; }
+.photos img { display: block; width: 100%; height: auto; border-radius: 3px; }
+.photos figcaption { grid-column: 1 / -1; color: var(--muted); }
+@media (min-width: 640px) { .photos { grid-template-columns: 1fr 1fr; } }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 html { scroll-behavior: smooth; }
 </style>
@@ -70,11 +74,24 @@ html { scroll-behavior: smooth; }
     <p>Songs I can’t stop thinking about, and a few things of my own.</p>
     <nav aria-label="Pieces">
       <ol>
+        <li><a href="#fungi">Fungi</a> <span class="meta">photos · Nov 2026</span></li>
         <li><a href="#cabrel">Cabrel: le vrai chanteur folk</a> <span class="meta">essay · Nov 2026</span></li>
         <li><a href="#sans-un-bruit">Sans un bruit</a> <span class="meta">poem · Nov 2021</span></li>
       </ol>
     </nav>
   </header>
+
+  <article id="fungi">
+    <header>
+      <span class="meta">Photos · 17 November 2026</span>
+      <h2>Fungi</h2>
+    </header>
+    <figure class="photos">
+      <img src="images/fungi-2026-11-17-cap.jpg" width="1050" height="1400" loading="lazy" alt="Dark brown mushroom cap lying on a light wooden table, side-lit, with its stem and a long shadow behind it.">
+      <img src="images/fungi-2026-11-17-gills.jpg" width="1050" height="1400" loading="lazy" alt="The same mushroom on its side, showing pale cream gills radiating from a slender stem, with a strong shadow.">
+      <figcaption class="meta">Unidentified</figcaption>
+    </figure>
+  </article>
 
   <article id="cabrel">
     <header>
