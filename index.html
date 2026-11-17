@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Thomas’s notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* layout: one narrow reading column, a quiet index at the top, pieces newest first */
+  --paper: #f4f6f5;
+  --ink: #1c2227;
+  --muted: #66717a;
+  --rule: #d5dbd8;
+  --accent: #2b4fae;
+  --font-body: "Literata", Georgia, "Times New Roman", serif;
+  --font-meta: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131719; --ink: #e3e7e5; --muted: #95a0a8; --rule: #2c3337; --accent: #93abff;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #131719; --ink: #e3e7e5; --muted: #95a0a8; --rule: #2c3337; --accent: #93abff;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 1.075rem; line-height: 1.7;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+.site { display: grid; gap: .35rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
+.site h1 { font-size: 1.6rem; font-weight: 600; margin: 0; letter-spacing: -.01em; }
+.site p { margin: 0; color: var(--muted); }
+.meta { font-family: var(--font-meta); font-size: .78rem; letter-spacing: .02em; color: var(--muted); }
+nav ol { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .6rem; }
+nav li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; }
+a { color: var(--accent); text-underline-offset: .18em; text-decoration-thickness: 1px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+article { padding-top: 3.5rem; }
+article + article { margin-top: 3.5rem; border-top: 1px solid var(--rule); }
+article header { display: grid; gap: .4rem; margin-bottom: 2rem; }
+article h2 { font-size: 1.9rem; line-height: 1.2; font-weight: 600; margin: 0; text-wrap: balance; letter-spacing: -.015em; }
+article p { margin: 0 0 1.05em; }
+hr.pause { border: 0; width: 4rem; height: 1px; background: var(--rule); margin: 2.2rem auto; }
+.notes { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .9rem; color: var(--muted); }
+.notes p { margin: 0; }
+sup a { text-decoration: none; padding: 0 .1em; }
+.poem { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+.poem .stanza { white-space: pre-line; margin: 0; font-size: 1.15rem; line-height: 1.85; }
+.poem .translation { color: var(--muted); font-style: italic; font-size: 1rem; }
+.poem figcaption { margin-bottom: .4rem; }
+@media (min-width: 640px) { .poem { grid-template-columns: 1fr 1fr; } }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="site">
+    <h1>Thomas</h1>
+    <p>Songs I can’t stop thinking about, and a few things of my own.</p>
+    <nav aria-label="Pieces">
+      <ol>
+        <li><a href="#cabrel">Cabrel: le vrai chanteur folk</a> <span class="meta">essay · Nov 2026</span></li>
+        <li><a href="#sans-un-bruit">Sans un bruit</a> <span class="meta">poem · Nov 2021</span></li>
+      </ol>
+    </nav>
+  </header>
+
+  <article id="cabrel">
+    <header>
+      <span class="meta">Essay · 15 November 2026</span>
+      <h2>Cabrel: le vrai chanteur folk</h2>
+    </header>
+        <p>Last night I dreamt about my dad, who died 2 months ago. Not in a sad way or bitter, just nostalgic. I was remembering him making jokes in restaurants and actually appreciating how he was rather than thinking that was phony.</p>
+        <p>Then this morning I thought about how he always said Cabrel was one of his favs because “he’s a poet”. So I decided to revisit him and stumbled upon Je l’aime à mourir while driving. It was a gut-punch. The guitar-picking, the insistent, aching melody, the poetry (thanks dad) of the beautiful images with astounding concision. As an Anglo-American folk connoisseur, I was conquered. Yes. He’s the one that could marry what I loved most about folk music, the culture I grew up in and that singing accent from the South of France where I hail from.</p>
+        <hr class="pause" aria-hidden="true">
+        <p>Ok that is all good and grand, but what exactly do I mean by “folk”?</p>
+        <p>I may have a definition of folk that is different from what is generally understood. The French “folklore” music groups together everything that approaches traditional music from any region of the globe. So Breton traditional music? Folklore. Even though it has bagpipes.</p>
+        <p>So no, I don’t mean that at all.</p>
+        <p>Then we have where the word originated in English. Anglo-American folk music, brought by British immigrants to the New World. That is already closer. And some of my fav songs are from there (Silver Dagger, probably British in origin). Then we have what is easily identifiable. Acoustic guitar, sounding “raw”, even perhaps rustic. I don’t mean that either.</p>
+        <p>For me it is a mix of many things. But at its core is the singer/songwriter. Take Dylan, for instance. What I like is the intricacies of his songwriting, and his disdainful rejection of modern life amuses me. Now take Joni Mitchell: I am simply enchanted by her poetic imagery, and it feels so incredibly refreshing to get a female point of view of that era, see The Same Situation or Conversation for instance.</p>
+        <p>And there are modern artists who I consider folk too. Take Bill Callahan, alias Smog, for instance. What an artist. What I love about him is the radical intimacy of his songs. One time we’re revisiting teenage dreams of being a spaceship walking at night. Other times we’re walking with him in a unforgiving desert on Apocalypse, or hearing an almost indecent avowal in To Be of Use.</p>
+        <p>Finally, we have Sufjan Stevens. Someone who relentlessly, <em>relentlessly</em> finds the beauty, the transcendental, the romanticism in every tragedy or meaningless thing. Putting things like “you check your text while I masturbated?” in a song without sounding creepy or pathetic, but in fact incredibly human and relatable? That’s Sufjan for you.</p>
+        <p>Do you see where I’m going with this? Every time I’m listening to any of these artists, they’re talking to me. The songs are from them and can’t be stripped away from them even though they can speak to anyone. Now we see that what I mean by a folk singer is not merely the dramatic interpreter of it but a full author who is actually really sharing with us, as we are listening, his deepest and most private thoughts.</p>
+        <p>And that is what I’ll use to characterize a folk singer.</p>
+        <hr class="pause" aria-hidden="true">
+        <p>So, listening to Je l’aime à mourir, what happened to me exactly?</p>
+        <p>In retrospect, the first thing that drew me in was the delicate guitar-picking in that song. Guitar-picking is a technique in which the guitarist “picks” at the individual strings rather than strumming several strings at once to make a chord. I don’t quite remember where I first read about it, but I think one of the first artists whose guitar-picking I consciously enjoyed was Adrianne Lenker. Her delicate, free-flowing guitar-picking as the main vehicle for the melody really appealed to me on an intimate level. And I guess Je l’aime à mourir brought me back to that feeling.</p>
+        <p>But there was more to it than the guitar. The first line « Moi je n’étais rien et voilà qu’aujourd’hui, je suis le gardien du sommeil de ses nuits » shook me to my core as I was absent-mindedly moving along <a href="https://youtu.be/UofYl3dataU?t=60">the highway</a>. First, we can agree that the terseness of the French is remarkable, all the more since Cabrel himself said French can’t pack images the way English does.</p>
+        <p>Moreover, the image is remarkable as well: I was nothing before and today I am the guardian of her sleep. We immediately understand a lot: the narrator is talking about someone very dear to him (his wife Mariette<sup><a href="#note-1" id="ref-1" aria-label="Note 1">1</a></sup>), and describing how, in hindsight, before her he was nothing. That feeling is familiar to anyone who truly loved anyone. That is an incredibly strong way to start a song if you ask me: setting up the subject, the tone and the way you’re going to describe things.</p>
+        <p>As I was listening, a weird feeling engulfed me. Of course I had already heard this song, but it had never felt so familiar at the same time. As a teenager and adult, I naturally gravitated towards Anglo-American music and listening to this French song gave me a familiar feeling that I usually associate with that music.</p>
+        <p>It wasn’t that I thought he sounded American. He didn’t. If anything, his accent was unmistakably that of the South of France. But there was something about the way he was singing that felt like the music I had spent years listening to. It didn’t feel like a French singer interpreting a song. It felt like a person singing something that was his.</p>
+        <hr class="pause" aria-hidden="true">
+        <p>It turns out this familiarity didn’t come out of nowhere. Cabrel himself has never hidden his musical lineage. Instead, he avowed it proudly: he said he discovered Bob Dylan at thirteen or fourteen and immediately felt a strong affinity with him, Taylor and Cohen rather than the then figures of chanson française. He even said James Taylor was his model for guitar, voice and music composition. And about Dylan he said he was listening to him while writing his opuses: Petite Marie and Je l’aime à mourir.</p>
+        <p>Cabrel, as a teenage boy in southwestern France in the late 60s, stumbled upon Dylan, and later James Taylor. He incorporated this songwriting and reinterpreted it in his own context.</p>
+        <p>I was also a teenage boy when I discovered Dylan, and was swept up by Blowin’ in the Wind’s simple power. This took me into a long wander through folk and country music, where I encountered Simon and Garfunkel, Joni Mitchell, Adrianne Lenker and Bill Callahan (the last two in concert!). This journey took me away from French music and I meandered back to it via a dream.</p>
+        <p>So perhaps I was hearing something that was there all along.</p>
+        <hr class="pause" aria-hidden="true">
+        <p>Elle a fait de ma vie des cocottes en papier (literally: she turned my life into paper chickens). This doesn’t translate well into English. The plainness of a children’s game object sounds ridiculous, but the way he says it, almost detached, highlights how his life has become light and fun.</p>
+        <p>And that accent mattered to him. When CBS released Petite Marie in 1977, the label tried to smooth out his Southern accent, and Cabrel has disowned that version ever since.</p>
+        <hr class="pause" aria-hidden="true">
+        <p>Ok, ok, let’s be a tiny bit honest here. French already has a name for what I’m describing: chanson à texte. Brassens, Brel, Barbara wrote and sang their own songs, full of private, poetic details, long before I ever heard of Bill Callahan. So maybe I’m not hearing folk in Cabrel at all. Maybe I’m hearing what chanson à texte has been building up to and slapping an English label on it, because that’s the music I grew up with. And maybe that’s exactly what my dad meant when he called him a poet: thinking of a chanteur à texte.</p>
+        <hr class="pause" aria-hidden="true">
+        <p>France heard Cabrel as a French singer who happened to be influenced by American music. Perhaps we should hear him the other way around: as an American-style singer-songwriter who happened to have been given the French language.</p>
+        <p>I have been sitting on this article for two months now, and when I think about what it all means to me, I don’t have a grandiose realisation to offer from this little musical trip. Or a special insight given by my dad’s death. In the words of the great Phil Elverum: when real death enters the house, all poetry is dumb.</p>
+    <div class="notes">
+      <p id="note-1"><a href="#ref-1" aria-label="Back to text">1.</a> As I learned after reading the Wikipedia page of the song, and not his daughter like I thought, and like a colleague who I brushed the subject with thought too.</p>
+    </div>
+  </article>
+
+  <article id="sans-un-bruit">
+    <header>
+      <span class="meta">Poem · 23 November 2021</span>
+      <h2>Sans un bruit</h2>
+    </header>
+    <div class="poem">
+      <figure lang="fr" style="margin:0">
+        <figcaption class="meta">Français</figcaption>
+        <p class="stanza">Sans un bruit.
+C’est sans un bruit que tout va s’arrêter.
+Que les oiseaux vont se taire.
+Demain, le ciel sera muet.
+Et je m’effacerai.</p>
+      </figure>
+      <figure lang="en" style="margin:0">
+        <figcaption class="meta">English</figcaption>
+        <p class="stanza translation">Without a sound.
+It is without a sound that everything will stop.
+That the birds will fall silent.
+Tomorrow, the sky will be mute.
+And I will fade away.</p>
+      </figure>
+    </div>
+  </article>
+</main>
+</body>
+</html>
