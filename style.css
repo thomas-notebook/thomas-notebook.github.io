@@ -61,3 +61,5 @@ sup a { text-decoration: none; padding: 0 .1em; }
 @media (min-width: 640px) { .photos { grid-template-columns: 1fr 1fr; } }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 html { scroll-behavior: smooth; }
+
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
