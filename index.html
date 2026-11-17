@@ -8,64 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<style>
-:root {
-  /* layout: one narrow reading column, a quiet index at the top, pieces newest first */
-  --paper: #f4f6f5;
-  --ink: #1c2227;
-  --muted: #66717a;
-  --rule: #d5dbd8;
-  --accent: #2b4fae;
-  --font-body: "Literata", Georgia, "Times New Roman", serif;
-  --font-meta: "IBM Plex Mono", ui-monospace, Menlo, monospace;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #131719; --ink: #e3e7e5; --muted: #95a0a8; --rule: #2c3337; --accent: #93abff;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #131719; --ink: #e3e7e5; --muted: #95a0a8; --rule: #2c3337; --accent: #93abff;
-  color-scheme: dark;
-}
-* { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
-body {
-  margin: 0; background: var(--paper); color: var(--ink);
-  font-family: var(--font-body); font-size: 1.075rem; line-height: 1.7;
-}
-.wrap { max-width: 38rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
-.site { display: grid; gap: .35rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
-.site h1 { font-size: 1.6rem; font-weight: 600; margin: 0; letter-spacing: -.01em; }
-.site p { margin: 0; color: var(--muted); }
-.meta { font-family: var(--font-meta); font-size: .78rem; letter-spacing: .02em; color: var(--muted); }
-nav ol { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .6rem; }
-nav li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; }
-a { color: var(--accent); text-underline-offset: .18em; text-decoration-thickness: 1px; }
-a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
-article { padding-top: 3.5rem; }
-article + article { margin-top: 3.5rem; border-top: 1px solid var(--rule); }
-article header { display: grid; gap: .4rem; margin-bottom: 2rem; }
-article h2 { font-size: 1.9rem; line-height: 1.2; font-weight: 600; margin: 0; text-wrap: balance; letter-spacing: -.015em; }
-article p { margin: 0 0 1.05em; }
-hr.pause { border: 0; width: 4rem; height: 1px; background: var(--rule); margin: 2.2rem auto; }
-.notes { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .9rem; color: var(--muted); }
-.notes p { margin: 0; }
-sup a { text-decoration: none; padding: 0 .1em; }
-.poem { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-.poem .stanza { white-space: pre-line; margin: 0; font-size: 1.15rem; line-height: 1.85; }
-.poem .translation { color: var(--muted); font-style: italic; font-size: 1rem; }
-.poem figcaption { margin-bottom: .4rem; }
-@media (min-width: 640px) { .poem { grid-template-columns: 1fr 1fr; } }
-.photos { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0; }
-.photos img { display: block; width: 100%; height: auto; border-radius: 3px; }
-.photos figcaption { grid-column: 1 / -1; color: var(--muted); }
-@media (min-width: 640px) { .photos { grid-template-columns: 1fr 1fr; } }
-@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
-html { scroll-behavior: smooth; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="wrap">
@@ -74,24 +17,12 @@ html { scroll-behavior: smooth; }
     <p>Songs I can’t stop thinking about, and a few things of my own.</p>
     <nav aria-label="Pieces">
       <ol>
-        <li><a href="#fungi">Fungi</a> <span class="meta">photos · Nov 2026</span></li>
+        <li><a href="fungi/">Fungi</a> <span class="meta">photo series · ongoing</span></li>
         <li><a href="#cabrel">Cabrel: le vrai chanteur folk</a> <span class="meta">essay · Nov 2026</span></li>
         <li><a href="#sans-un-bruit">Sans un bruit</a> <span class="meta">poem · Nov 2021</span></li>
       </ol>
     </nav>
   </header>
-
-  <article id="fungi">
-    <header>
-      <span class="meta">Photos · 17 November 2026</span>
-      <h2>Fungi</h2>
-    </header>
-    <figure class="photos">
-      <img src="images/fungi-2026-11-17-cap.jpg" width="1050" height="1400" loading="lazy" alt="Dark brown mushroom cap lying on a light wooden table, side-lit, with its stem and a long shadow behind it.">
-      <img src="images/fungi-2026-11-17-gills.jpg" width="1050" height="1400" loading="lazy" alt="The same mushroom on its side, showing pale cream gills radiating from a slender stem, with a strong shadow.">
-      <figcaption class="meta">Unidentified</figcaption>
-    </figure>
-  </article>
 
   <article id="cabrel">
     <header>
