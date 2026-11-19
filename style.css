@@ -87,3 +87,7 @@ dialog.lightbox::backdrop { background: #0b0d0e; }
 /* small photo next to a link in the index */
 .with-thumb { display: inline-flex; align-items: center; gap: .7rem; }
 .with-thumb img { width: 3rem; height: 3rem; object-fit: cover; border-radius: 4px; flex: none; }
+
+/* short quote under a page title */
+.epigraph { margin: .3rem 0 0; font-style: italic; color: var(--muted); }
+.epigraph .meta { font-style: normal; white-space: nowrap; margin-left: .3em; }
