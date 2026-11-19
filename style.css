@@ -46,6 +46,8 @@ article p { margin: 0 0 1.05em; }
 .back { font-family: var(--font-meta); font-size: .8rem; }
 .entry + .entry { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--rule); }
 .entry h3 { font-family: var(--font-meta); font-weight: 400; font-size: .8rem; color: var(--muted); margin: 0 0 1rem; }
+/* drop cap: first paragraph of an essay only (poems start with a .poem div, so they're skipped) */
+article > header + p::first-letter { float: left; font-size: 3.4em; line-height: .85; font-weight: 600; padding: .08em .1em 0 0; color: var(--accent); }
 hr.pause { border: 0; width: 4rem; height: 1px; background: var(--rule); margin: 2.2rem auto; }
 .notes { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .9rem; color: var(--muted); }
 .notes p { margin: 0; }
