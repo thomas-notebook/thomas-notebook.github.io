@@ -1,22 +1,24 @@
 :root {
   /* layout: one narrow reading column, a quiet index at the top, pieces newest first */
-  --paper: #f4f6f5;
-  --ink: #1c2227;
-  --muted: #66717a;
-  --rule: #d5dbd8;
-  --accent: #2b4fae;
+  /* palette: Ocre (warm ivory paper, ochre-brown links) */
+  --paper: #faf4e6;
+  --ink: #2a2420;
+  --muted: #7d6f5f;
+  --rule: #e6dcc7;
+  --accent: #9a5b13;
+  --font-title: "Beth Ellen", "Literata", cursive;
   --font-body: "Literata", Georgia, "Times New Roman", serif;
   --font-meta: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #131719; --ink: #e3e7e5; --muted: #95a0a8; --rule: #2c3337; --accent: #93abff;
+    --paper: #1b1714; --ink: #ece3d3; --muted: #a8998a; --rule: #3a322b; --accent: #e0a85a;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #131719; --ink: #e3e7e5; --muted: #95a0a8; --rule: #2c3337; --accent: #93abff;
+  --paper: #1b1714; --ink: #ece3d3; --muted: #a8998a; --rule: #3a322b; --accent: #e0a85a;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -32,10 +34,11 @@ body {
 @media (min-width: 1600px) { body { font-size: 1.28rem; } }
 .site { display: grid; gap: .35rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
 .site h1 { font-size: 1.6rem; font-weight: 600; margin: 0; letter-spacing: -.01em; }
+.site h1.title { font-family: var(--font-title); font-weight: 400; font-size: clamp(1.5rem, 6vw, 2.1rem); line-height: 1.9; letter-spacing: 0; margin: 0 0 .4rem; }
 .site p { margin: 0; color: color-mix(in srgb, var(--ink) 35%, var(--muted)); }
 .meta { font-family: var(--font-meta); font-size: .78rem; letter-spacing: .02em; color: var(--muted); }
 nav ol { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .6rem; }
-nav li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; }
+nav li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .25rem 1rem; }
 a { color: var(--accent); text-underline-offset: .18em; text-decoration-thickness: 1px; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 article { padding-top: 3.5rem; }
@@ -80,3 +83,7 @@ dialog.lightbox::backdrop { background: #0b0d0e; }
 .lb-prev { left: 1rem; top: 50%; transform: translateY(-50%); }
 .lb-next { right: 1rem; top: 50%; transform: translateY(-50%); }
 .lb-hint { position: fixed; bottom: 1rem; left: 50%; transform: translateX(-50%); margin: 0; font-family: var(--font-meta); font-size: .75rem; color: #b8c1c7; background: rgba(0,0,0,.45); padding: .3rem .7rem; border-radius: 999px; pointer-events: none; }
+
+/* small photo next to a link in the index */
+.with-thumb { display: inline-flex; align-items: center; gap: .7rem; }
+.with-thumb img { width: 3rem; height: 3rem; object-fit: cover; border-radius: 4px; flex: none; }
