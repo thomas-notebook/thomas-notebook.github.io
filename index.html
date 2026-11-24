@@ -20,11 +20,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400&family=Beth+Ellen&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=14">
+<link rel="stylesheet" href="style.css?v=15">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 <main class="wrap">
-  <header class="site">
+  <header class="site" id="top">
     <h1 class="title">Thomas’s notebook</h1>
     <p>Songs I can’t stop thinking about, and a few things of my own.</p>
     <nav aria-label="Pieces">
@@ -32,8 +33,8 @@
         <li><a class="with-thumb" href="fungi/"><img src="images/fungi-thumb.jpg?v=2" width="48" height="48" alt="">Fungi</a> <span class="meta">photo series · ongoing</span></li>
         <li><a href="#team-bride">Team bride</a> <span class="meta">essay · Nov 2026</span></li>
         <li><a href="#the-well">The Well · Smog</a> <span class="meta">song note · Nov 2026</span></li>
-        <li><a href="#cabrel">Cabrel: le vrai chanteur folk</a> <span class="meta">essay · Nov 2026</span></li>
-        <li><a href="#sans-un-bruit">Sans un bruit</a> <span class="meta">poem · Nov 2021</span></li>
+        <li><a href="#cabrel">Cabrel: <span lang="fr">le vrai chanteur folk</span></a> <span class="meta">essay · Nov 2026</span></li>
+        <li><a href="#sans-un-bruit" lang="fr">Sans un bruit</a> <span class="meta">poem · Nov 2021</span></li>
       </ol>
     </nav>
   </header>
@@ -41,7 +42,7 @@
   <article id="team-bride" class="essay" lang="fr">
     <header>
       <span class="meta">Essay · 24 November 2026</span>
-      <h2>Team bride</h2>
+      <h2 lang="en">Team bride</h2>
     </header>
     <p>Le samedi 4 juillet j’étais au mariage de ma cousine. Deux jours plus tard, alors que je me trouvais encore en Alsace, mon père m’appelle. Ce n’est pas inhabituel. Mais à son « salut », je devine que quelque chose cloche. Il me dit simplement « Thomas, est-ce que tu es assis ? » Là, je comprends.</p>
     <p>Je bredouille « oui oui » et il m’annonce qu’il est à l’hôpital et qu’il ne lui reste que quelques heures à vivre. Incompréhension. Déni. Je monte quatre à quatre les escaliers de la maison de mes grands-parents pour m’isoler tout en essayant de comprendre et je tente de vagues « quoi », « mais comment ça », « je ne comprends pas », etc., mais la réalité est bien là.</p>
@@ -51,12 +52,13 @@
     <p>Quand l’avion atterrit, le choc du sol me ramène durement à la réalité pendant une seconde. Merde. Je dois vite récupérer ma voiture pour foncer à l’hôpital. Vite, je dois sortir vite. Je dois optimiser toutes les secondes pour sortir de l’avion puis de l’aéroport aussi vite que possible.</p>
     <p>Je sors de l’avion en premier, je double tout le monde. J’ai de grandes jambes, je peux marcher vite. Je me dirige vers le tram. Coup de bol, il est là. Je le prends en me disant que j’aurais peut-être dû prendre un taxi pour aller plus vite plutôt que de vouloir récupérer ma voiture. Merde. Je n’ose pas contacter mon père ou sa compagne pour ne pas savoir son état. Merde. Je sors du tram et fonce vers ma voiture. Je prends la voie rapide et arrive à l’hôpital en un rien de temps. Merde. Où est le parking ?! Non, là c’est le parking des urgences. Là non plus, c’est le parking des employés. Je fais tout le tour du bâtiment en voiture et aperçois un interne qui m’indique le chemin vers le parking. C’était mon point de départ. Ah.</p>
     <p>Je me gare et grimpe vers le service Réanimation. J’arrive en courant dans le service et ralentis en une marche rapide. Je croise une infirmière dans le corridor qui me demande qui je viens voir. Après ma réponse, son visage change et je sens une gêne. « Je suis désolée, il est décédé, je viens de le constater. » J’acquiesce sans rien dire et continue de marcher, comme un automate qui va droit à son but. J’arrive dans la chambre et vois sa compagne, une amie et lui qui est complètement immobile et serein. Sa compagne me confirme qu’il est décédé et me prend dans ses bras. Elle est effondrée. Son amie me dit quelques mots. Elles me laissent seul avec lui.</p>
-    <p>Je me retrouve haletant devant le corps de mon père avec un tatouage doré « team bride » partiellement effacé alors que je reviens du mariage de ma cousine, comme dans la pire telenovela qui soit.</p>
+    <p>Je me retrouve haletant devant le corps de mon père avec un tatouage doré « <span lang="en">team bride</span> » partiellement effacé alors que je reviens du mariage de ma cousine, comme dans la pire telenovela qui soit.</p>
     <p>Le fait de me retrouver haletant devant lui m’anesthésie car mon corps me ramène à moi-même et non à lui, étendu devant moi, et en même temps me donne un sentiment désagréable derrière la nuque.</p>
     <p>Ça me ramène à tous les mauvais moments où j’étais haletant à cause du stress, de courir partout parce que j’ai perdu ou oublié quelque chose.</p>
     <p>Comme si, encore une fois, quelque chose m’avait échappé.</p>
     <p>Ce sentiment d’être toujours en retard, toujours en train de courir après quelque chose, me colle à la peau comme un drap par une nuit de canicule.</p>
     <p>Lors de l’enterrement, je ne me souviens ni de leurs visages ni de leurs mots. Seulement du sérieux macho des amis de mon père, qui me regardent droit dans les yeux et me disent des compliments réducteurs sur lui. Ça m’amuse.</p>
+    <p class="to-index" lang="en"><a href="#top">↑ Back to index</a></p>
   </article>
 
   <article id="the-well" class="song-note">
@@ -69,54 +71,56 @@
     <p>Recliner Notes wrote <a href="https://reclinernotes.com/2023/01/22/the-well/">a marvelous piece</a> on it. It opens with Raymond Carver’s “On Writing,” where Carver says you can take commonplace things and endow them “with immense, even startling power.” They read the song as Callahan turning the old cliché of a writer’s well running dry into a story, where the drip proves the well isn’t dry after all.</p>
     <p>This morning, the coffee machine was my drop.</p>
     <p class="meta"><a href="https://www.youtube.com/watch?v=clw_E53vFGk">Listen to “The Well”</a> · <i>A River Ain’t Too Much to Love</i> (2005)</p>
+    <p class="to-index"><a href="#top">↑ Back to index</a></p>
   </article>
 
   <article id="cabrel" class="essay">
     <header>
       <span class="meta">Essay · 15 November 2026</span>
-      <h2>Cabrel: le vrai chanteur folk</h2>
+      <h2>Cabrel: <span lang="fr">le vrai chanteur folk</span></h2>
     </header>
         <p>Last night I dreamt about my dad, who died 2 months ago. Not in a sad way or bitter, just nostalgic. I was remembering him making jokes in restaurants and actually appreciating how he was rather than thinking that was phony.</p>
-        <p>Then this morning I thought about how he always said Cabrel was one of his favs because “he’s a poet”. So I decided to revisit him and stumbled upon Je l’aime à mourir while driving. It was a gut-punch. The guitar-picking, the insistent, aching melody, the poetry (thanks dad) of the beautiful images with astounding concision. As an Anglo-American folk connoisseur, I was conquered. Yes. He’s the one that could marry what I loved most about folk music, the culture I grew up in and that singing accent from the South of France where I hail from.</p>
+        <p>Then this morning I thought about how he always said Cabrel was one of his favs because “he’s a poet”. So I decided to revisit him and stumbled upon <span lang="fr">Je l’aime à mourir</span> while driving. It was a gut-punch. The guitar-picking, the insistent, aching melody, the poetry (thanks dad) of the beautiful images with astounding concision. As an Anglo-American folk connoisseur, I was conquered. Yes. He’s the one that could marry what I loved most about folk music, the culture I grew up in and that singing accent from the South of France where I hail from.</p>
         <hr class="pause" aria-hidden="true">
         <p>Ok that is all good and grand, but what exactly do I mean by “folk”?</p>
-        <p>I may have a definition of folk that is different from what is generally understood. The French “folklore” music groups together everything that approaches traditional music from any region of the globe. So Breton traditional music? Folklore. Even though it has bagpipes.</p>
+        <p>I may have a definition of folk that is different from what is generally understood. The French “<span lang="fr">folklore</span>” music groups together everything that approaches traditional music from any region of the globe. So Breton traditional music? Folklore. Even though it has bagpipes.</p>
         <p>So no, I don’t mean that at all.</p>
         <p>Then we have where the word originated in English. Anglo-American folk music, brought by British immigrants to the New World. That is already closer. And some of my fav songs are from there (Silver Dagger, probably British in origin). Then we have what is easily identifiable. Acoustic guitar, sounding “raw”, even perhaps rustic. I don’t mean that either.</p>
         <p>For me it is a mix of many things. But at its core is the singer/songwriter. Take Dylan, for instance. What I like is the intricacies of his songwriting, and his disdainful rejection of modern life amuses me. Now take Joni Mitchell: I am simply enchanted by her poetic imagery, and it feels so incredibly refreshing to get a female point of view of that era, see The Same Situation or Conversation for instance.</p>
-        <p>And there are modern artists who I consider folk too. Take Bill Callahan, alias Smog, for instance. What an artist. What I love about him is the radical intimacy of his songs. One time we’re revisiting teenage dreams of being a spaceship walking at night. Other times we’re walking with him in a unforgiving desert on Apocalypse, or hearing an almost indecent avowal in To Be of Use.</p>
+        <p>And there are modern artists who I consider folk too. Take Bill Callahan, alias Smog, for instance. What an artist. What I love about him is the radical intimacy of his songs. One time we’re revisiting teenage dreams of being a spaceship walking at night. Other times we’re walking with him in an unforgiving desert on Apocalypse, or hearing an almost indecent avowal in To Be of Use.</p>
         <p>Finally, we have Sufjan Stevens. Someone who relentlessly, <em>relentlessly</em> finds the beauty, the transcendental, the romanticism in every tragedy or meaningless thing. Putting things like “you check your text while I masturbated?” in a song without sounding creepy or pathetic, but in fact incredibly human and relatable? That’s Sufjan for you.</p>
         <p>Do you see where I’m going with this? Every time I’m listening to any of these artists, they’re talking to me. The songs are from them and can’t be stripped away from them even though they can speak to anyone. Now we see that what I mean by a folk singer is not merely the dramatic interpreter of it but a full author who is actually really sharing with us, as we are listening, his deepest and most private thoughts.</p>
         <p>And that is what I’ll use to characterize a folk singer.</p>
         <hr class="pause" aria-hidden="true">
-        <p>So, listening to Je l’aime à mourir, what happened to me exactly?</p>
-        <p>In retrospect, the first thing that drew me in was the delicate guitar-picking in that song. Guitar-picking is a technique in which the guitarist “picks” at the individual strings rather than strumming several strings at once to make a chord. I don’t quite remember where I first read about it, but I think one of the first artists whose guitar-picking I consciously enjoyed was Adrianne Lenker. Her delicate, free-flowing guitar-picking as the main vehicle for the melody really appealed to me on an intimate level. And I guess Je l’aime à mourir brought me back to that feeling.</p>
-        <p>But there was more to it than the guitar. The first line « Moi je n’étais rien et voilà qu’aujourd’hui, je suis le gardien du sommeil de ses nuits » shook me to my core as I was absent-mindedly moving along <a href="https://youtu.be/UofYl3dataU?t=60">the highway</a>. First, we can agree that the terseness of the French is remarkable, all the more since Cabrel himself said French can’t pack images the way English does.</p>
+        <p>So, listening to <span lang="fr">Je l’aime à mourir</span>, what happened to me exactly?</p>
+        <p>In retrospect, the first thing that drew me in was the delicate guitar-picking in that song. Guitar-picking is a technique in which the guitarist “picks” at the individual strings rather than strumming several strings at once to make a chord. I don’t quite remember where I first read about it, but I think one of the first artists whose guitar-picking I consciously enjoyed was Adrianne Lenker. Her delicate, free-flowing guitar-picking as the main vehicle for the melody really appealed to me on an intimate level. And I guess <span lang="fr">Je l’aime à mourir</span> brought me back to that feeling.</p>
+        <p>But there was more to it than the guitar. The first line <span lang="fr">« Moi je n’étais rien et voilà qu’aujourd’hui, je suis le gardien du sommeil de ses nuits »</span> shook me to my core as I was absent-mindedly moving along <a href="https://youtu.be/UofYl3dataU?t=60">the highway</a>. First, we can agree that the terseness of the French is remarkable, all the more since Cabrel himself said French can’t pack images the way English does.</p>
         <p>Moreover, the image is remarkable as well: I was nothing before and today I am the guardian of her sleep. We immediately understand a lot: the narrator is talking about someone very dear to him (his wife Mariette<sup><a href="#note-1" id="ref-1" aria-label="Note 1">1</a></sup>), and describing how, in hindsight, before her he was nothing. That feeling is familiar to anyone who truly loved anyone. That is an incredibly strong way to start a song if you ask me: setting up the subject, the tone and the way you’re going to describe things.</p>
         <p>As I was listening, a weird feeling engulfed me. Of course I had already heard this song, but it had never felt so familiar at the same time. As a teenager and adult, I naturally gravitated towards Anglo-American music and listening to this French song gave me a familiar feeling that I usually associate with that music.</p>
         <p>It wasn’t that I thought he sounded American. He didn’t. If anything, his accent was unmistakably that of the South of France. But there was something about the way he was singing that felt like the music I had spent years listening to. It didn’t feel like a French singer interpreting a song. It felt like a person singing something that was his.</p>
         <hr class="pause" aria-hidden="true">
-        <p>It turns out this familiarity didn’t come out of nowhere. Cabrel himself has never hidden his musical lineage. Instead, he avowed it proudly: he said he discovered Bob Dylan at thirteen or fourteen and immediately felt a strong affinity with him, Taylor and Cohen rather than the then figures of chanson française. He even said James Taylor was his model for guitar, voice and music composition. And about Dylan he said he was listening to him while writing his opuses: Petite Marie and Je l’aime à mourir.</p>
+        <p>It turns out this familiarity didn’t come out of nowhere. Cabrel himself has never hidden his musical lineage. Instead, he avowed it proudly: he said he discovered Bob Dylan at thirteen or fourteen and immediately felt a strong affinity with him, Taylor and Cohen rather than the then figures of <span lang="fr">chanson française</span>. He even said James Taylor was his model for guitar, voice and music composition. And about Dylan he said he was listening to him while writing his opuses: Petite Marie and <span lang="fr">Je l’aime à mourir</span>.</p>
         <p>Cabrel, as a teenage boy in southwestern France in the late 60s, stumbled upon Dylan, and later James Taylor. He incorporated this songwriting and reinterpreted it in his own context.</p>
         <p>I was also a teenage boy when I discovered Dylan, and was swept up by Blowin’ in the Wind’s simple power. This took me into a long wander through folk and country music, where I encountered Simon and Garfunkel, Joni Mitchell, Adrianne Lenker and Bill Callahan (the last two in concert!). This journey took me away from French music and I meandered back to it via a dream.</p>
         <p>So perhaps I was hearing something that was there all along.</p>
         <hr class="pause" aria-hidden="true">
-        <p>Elle a fait de ma vie des cocottes en papier (literally: she turned my life into paper chickens). This doesn’t translate well into English. The plainness of a children’s game object sounds ridiculous, but the way he says it, almost detached, highlights how his life has become light and fun.</p>
+        <p><span lang="fr">Elle a fait de ma vie des cocottes en papier</span> (literally: she turned my life into paper chickens). This doesn’t translate well into English. The plainness of a children’s game object sounds ridiculous, but the way he says it, almost detached, highlights how his life has become light and fun.</p>
         <p>And that accent mattered to him. When CBS released Petite Marie in 1977, the label tried to smooth out his Southern accent, and Cabrel has disowned that version ever since.</p>
         <hr class="pause" aria-hidden="true">
-        <p>Ok, ok, let’s be a tiny bit honest here. French already has a name for what I’m describing: chanson à texte. Brassens, Brel, Barbara wrote and sang their own songs, full of private, poetic details, long before I ever heard of Bill Callahan. So maybe I’m not hearing folk in Cabrel at all. Maybe I’m hearing what chanson à texte has been building up to and slapping an English label on it, because that’s the music I grew up with. And maybe that’s exactly what my dad meant when he called him a poet: thinking of a chanteur à texte.</p>
+        <p>Ok, ok, let’s be a tiny bit honest here. French already has a name for what I’m describing: <span lang="fr">chanson à texte</span>. Brassens, Brel, Barbara wrote and sang their own songs, full of private, poetic details, long before I ever heard of Bill Callahan. So maybe I’m not hearing folk in Cabrel at all. Maybe I’m hearing what <span lang="fr">chanson à texte</span> has been building up to and slapping an English label on it, because that’s the music I grew up with. And maybe that’s exactly what my dad meant when he called him a poet: thinking of a <span lang="fr">chanteur à texte</span>.</p>
         <hr class="pause" aria-hidden="true">
         <p>France heard Cabrel as a French singer who happened to be influenced by American music. Perhaps we should hear him the other way around: as an American-style singer-songwriter who happened to have been given the French language.</p>
         <p>I have been sitting on this article for two months now, and when I think about what it all means to me, I don’t have a grandiose realisation to offer from this little musical trip. Or a special insight given by my dad’s death. In the words of the great Phil Elverum: when real death enters the house, all poetry is dumb.</p>
     <div class="notes">
       <p id="note-1"><a href="#ref-1" aria-label="Back to text">1.</a> As I learned after reading the Wikipedia page of the song, and not his daughter like I thought, and like a colleague who I brushed the subject with thought too.</p>
     </div>
+    <p class="to-index"><a href="#top">↑ Back to index</a></p>
   </article>
 
   <article id="sans-un-bruit" class="poem">
     <header>
       <span class="meta">Poem · 23 November 2021</span>
-      <h2>Sans un bruit</h2>
+      <h2 lang="fr">Sans un bruit</h2>
     </header>
     <div class="poem-body">
       <figure lang="fr">
@@ -136,7 +140,9 @@ Tomorrow, the sky will be mute.
 And I will fade away.</p>
       </figure>
     </div>
+    <p class="to-index"><a href="#top">↑ Back to index</a></p>
   </article>
 </main>
+<script src="theme.js?v=1"></script>
 </body>
 </html>
