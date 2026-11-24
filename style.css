@@ -154,6 +154,8 @@ sup a { text-decoration: none; padding: 0 .1em; }
 .photos img { display: block; width: 100%; height: auto; border-radius: 3px; cursor: zoom-in; }
 .photos img:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .photos figcaption { grid-column: 1 / -1; color: var(--muted); }
+/* A lone photo in a batch spans the full width */
+.photos img:only-of-type { grid-column: 1 / -1; }
 
 
 /* 7. PHOTO VIEWER (full screen when you tap a photo; built by lightbox.js) */
